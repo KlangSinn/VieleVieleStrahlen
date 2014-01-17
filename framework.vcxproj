@@ -39,12 +39,14 @@
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -62,6 +64,8 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
+    <IncludePath>H:\Drafts\Code\SharedCode\VieleVieleStrahlen\glut32\include\;$(IncludePath)</IncludePath>
+    <LibraryPath>H:\Drafts\Code\SharedCode\VieleVieleStrahlen\glut32\lib\;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -70,7 +74,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_USE_MATH_DEFINES;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>./include;./boost/include;D:\teaching\lecture\plse.exercise\public\rt_framework\glut32\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>H:\Drafts\Code\SharedCode\VieleVieleStrahlen\include;H:\Drafts\Code\SharedCode\VieleVieleStrahlen\glut32\lib;H:\Drafts\Code\SharedCode\VieleVieleStrahlen\glut32\include;H:\Drafts\Code\SharedCode\VieleVieleStrahlen\glut32;./include;./boost/include;D:\teaching\lecture\plse.exercise\public\rt_framework\glut32\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
